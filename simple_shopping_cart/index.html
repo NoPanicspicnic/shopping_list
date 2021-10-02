@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application_test.js"></script>
+    <script
+     src="https://code.jquery.com/jquery-3.3.1.min.js"
+     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+     crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class='container'>
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- Title -->
+          <h2>Shopping List</h2>
+          <div class="row">
+            <!-- The div where we will display to do list items -->
+            <div class="col-xs-3">
+             <div class="row">
+               <div>
+                 <!-- The input element for users to add To Do -->
+                 <input id="things-input" class="form-control" placeholder="Things to Buy">
+               </div>
+             </div>
+            </div>
+            <div class="col-xs-3">
+              <input id="cost-input" class="form-control" placeholder="Cost (numbers only)">
+            </div>
+            <div class="col-xs-3">
+              <input id="quanity-input" class="form-control" placeholder="Quanity (numbers only)">
+              <button id="add-button" type="button" class="btn btn-sm btn-primary">Add to List</button>
+            </div>
+            <div class="col-xs-3">
+              <h3>Total</h3>
+            </div>
+          </div>
+          <div id="things-list" class="row">
+          </div>
+          <div id="grand-total" class="row">
+            <div class="col-xs-9">
+            </div>
+            <h3 class="col-xs-3" id='grandTotalId'>
+              0
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
